@@ -1,0 +1,19 @@
+/* controls carousel speed */
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 0s ease;
+    transition: transform 0s ease;
+    transition: transform 0s ease, -webkit-transform 0s ease;
+}
+
+
+/* Expand and Center Card */
+
+
+/* Accordion for cards */
+.card-title {
+    transition: .3s transform ease-in-out;
+}
+
+body{
+    background-color: blue;
+}
