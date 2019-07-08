@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- JavaScript Main -->
-    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="./main.js">
+    <script src="main.js"></script>
 
     <title>Video Games</title>
   </head>
@@ -37,7 +38,7 @@
           <h1 class="display-4">Kenny's World of Gaming!</h1>
           <p class="lead">Welcome to my world of gaming where you can buy the Great games for Playstation and Nintendo old and new!</p>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p>Check out some of the awesome games we have on sale!!</p>
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </div>
 
@@ -49,6 +50,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
+      
 
         <div class="carousel-inner" style= "padding:13%">
           
@@ -110,7 +112,7 @@
                               <div class="card-text">
                                 As Spider-Man you'll swing through a vast city scape from your web, with an amazing story line!
                               </div>
-                          </div>
+                            </div>
                           <div class="card">
                                 <h5 class="card-header" role="tab" id="headingTwo">
                                   <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -296,6 +298,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+    </div>
       
   
 </div>
@@ -556,38 +559,51 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
   
 
 </div>
 
 
-<form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div>
-        <select class="custom-select">
-            <option selected>Open this select menu</option>
-            <option value="1">Sign me up for promotional email</option>
-            <option value="2">Do not sign me up for promotional emails</option>
-            <option value="3">Send me info based on my browsing experience</option>
-          </select>
-    </div>
+<!-- Customer Form -->
 
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+<div style = "padding:13%">
+  <form name="contactForm" action="/submit.php" onsubmit="return formValidation()" method="post">
+      <div class="form-group">
+        <label for="exampleInputEmail1" name="eMail">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" name="passWord">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div>
+          <select class="custom-select">
+              <option selected>Open this select menu</option>
+              <option value="1">Sign me up for promotional email</option>
+              <option value="2">Do not sign me up for promotional emails</option>
+              <option value="3">Send me info based on my browsing experience</option>
+            </select>
+      </div>
+
     
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
+<div style= "padding:25%">
+  <img id= "playstationLogo" src="photos\pslogo.png" alt="Playstation logo" onclick="logoSwap();">
+</div>
+  <!-- <img src="photos\switchlogo.jpg" alt="Nintendo Switch logo"> -->
+
+  <!-- <div>
+    <img src="photos\switchlogo.jpg" alt="gif" onclick="changeImg()" id="switchLogo">
+  </div> -->
            
 
     <!-- Optional JavaScript -->

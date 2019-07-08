@@ -1,8 +1,8 @@
 /* controls carousel speed */
 .carousel-inner .carousel-item {
-    transition: -webkit-transform 0s ease;
-    transition: transform 0s ease;
-    transition: transform 0s ease, -webkit-transform 0s ease;
+    transition: -webkit-transform 7s ease;
+    transition: transform 7s ease;
+    /* transition: transform 7s ease, -webkit-transform 7s ease; */
 }
 
 
